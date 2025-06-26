@@ -29,9 +29,12 @@
 
 .main {
   display: flex;
-  flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  width: max-content;
+  >div {
+    width: 100dvw;
+    height: 100dvh;
+    scroll-snap-align: center;
+  }
 }
 
 .main ol {
